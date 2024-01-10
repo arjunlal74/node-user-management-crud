@@ -14,3 +14,12 @@ exports.addCustomer = async (req, res) => {
     res.render('customer/add', locals);
 };
 
+exports.postCustomer = async (req, res) => {
+    console.log(req.body);
+    const locals = {
+        'title': "Add new customer - NodeJS",
+        'description': "Node js user management system "
+    }
+    res.render('customer/add', locals);
+};
+
